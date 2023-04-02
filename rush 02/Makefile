@@ -6,7 +6,7 @@ NAME	=	rush-02
 OBJS	=	${SRCS:.c=.o=.h=}
 
 $(NAME):
-	gcc $(FLAGS) -o $(NAME) $(SRC)
+	gcc $(CFLAGS) -o $(NAME) $(SRC)
 clean:
 	rm -f $(SRC:.c=.o)
 
